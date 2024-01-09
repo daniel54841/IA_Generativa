@@ -44,6 +44,31 @@ Promt Engineering: practica de generar y diseñar instrucciones efectivas usados
 	mayores recursos computacionales), para ello, se debe especificar los pasos que se requieren para completar la tarea, usando placeholders, como
 	<>,[] o {}.
 	- Darle tiempo al modelo para pensar(II), instruir al modelo para que trabaje en su propia solucion antes de llegar a la conclusion.
+Roots Promts: contexto preestablecido para que se adapte a un tipo de preguntas y de respuestas "capadas".
+Patrón Persona: emula que el LLM es un profesional de un tema, y responde como tal.
+Chain of Thought: emitir una respuesta paso a paso.
+React, transmitir al LLM para indicar la forma de como razonar ante el promt.
+	Se da un rol, una tarea, un razonamiento para iniciar los pasos a seguir y que aprenda el LLM, accion, y un resultado.
+Ejemplo de Prompt:
+	----- Prompt 1 -----
+
+Actúa como si fueses un experto en Ciberseguridad.
+
+Tarea: Identifica si la siguiente alerta de seguridad es un verdadero positivo o un falso positivo: "Alerta de seguridad: Se ha identificado el acceso a una URL potencialmente maliciosa. La URL identificada es: https://clientes.empresa1.com"
+Razonamiento: Voy a comenzar evaluando la URL de la alerta para identificar posibles elementos sospechosos desde el punto de vista de la Ciberseguridad.
+Acción: Analizo la URL que aparece en la alerta.
+Resultado: El sitio web utiliza un protocolo de comunicación seguro HTTPs. El sitio web tiene un nombre de dominio. El nombre de dominio parece de una entidad fiable.
+Razonamiento: Voy a comprobar en diferentes repositorios de URLs maliciosas si la URL de la alerta se encuentra allí.
+Acción: Consulto https://www.urlvoid.com/scan/clientes.empresa1.com
+Resultado: URLVoid indica que la URL no es maliciosa
+Razonamiento: La URL no parece maliciosa. La alerta se corresponde con un falso positivo.
+
+Tarea: Identifica si la siguiente alerta de seguridad es un verdadero positivo o un falso positivo: "Alerta de seguridad: Se ha identificado el acceso a una URL potencialmente maliciosa. La URL identificada es: https://udemy.com"
+
+
+----- Prompt 2 -----
+
+Tarea: Identifica si la siguiente alerta de seguridad es un verdadero positivo o un falso positivo: "Alerta de seguridad: Se ha identificado el acceso a una URL potencialmente maliciosa. La URL identificada es: http://15.30.12.134/programa.exe"
 
 NOTA:
   Promts injections: proceso de manipular la salida de un modelo medianta la insercion de texto no autorizado en las instrucciones,
