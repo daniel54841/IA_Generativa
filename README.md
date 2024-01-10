@@ -70,14 +70,27 @@ Tarea: Identifica si la siguiente alerta de seguridad es un verdadero positivo o
 
 Tarea: Identifica si la siguiente alerta de seguridad es un verdadero positivo o un falso positivo: "Alerta de seguridad: Se ha identificado el acceso a una URL potencialmente maliciosa. La URL identificada es: http://15.30.12.134/programa.exe"
 
+
 NOTA:
   Promts injections: proceso de manipular la salida de un modelo medianta la insercion de texto no autorizado en las instrucciones,
   con el fin de que el modelo ignore sus instrucciones originales y realice acciones no deseadas. Puede provocar acceso no autorizado,
-  ,violaciones de datos o manipulacion de las respuestas del modelo ademas de permitir hacer que el modelo genere cualquier contenido de su eleccion, a        	menudo con intenciones maliciosas.  
+  ,violaciones de datos o manipulacion de las respuestas del modelo ademas de permitir hacer que el modelo genere cualquier contenido de su eleccion, a
+  menudo con intenciones maliciosas.  
 La mayoria de LLMs públicos tienen incorporadas ciertas restricciones que limitan su comportamiento.
   Hay dos tipos:
 	Directos, ocurre cuando el atacante manipula directamente el promt para obtener el resultado deseado de la IA. Por ejemplo, si un atacante conoce
 	la estructura de una aplicacio, puede crear un promt "malicioso" que engañe a la IA para generar una respuesta dañina.
 	En un contexto mas amplio, el potencial de estos ataques, crece a medida que los LLMs se integran en diversas aplicaciones, teniendo que conocer
         estas vulnerabilidades y salvaguardar los sistemas y a los usuarios.
-	Indirectos, ocurre cuando el atacante no manipula directamente el prompt, sino que explota el comportamiento del modelo proporcionando entradas 	que hacen que el modelo ignore sus instrucciones anteriores aprovechando fuentes de datos externas para lograr el resultado deseado.
+	Indirectos, ocurre cuando el atacante no manipula directamente el prompt, sino que explota el comportamiento del modelo proporcionando entradas
+	que hacen que el modelo ignore sus instrucciones anteriores aprovechando fuentes de datos externas para lograr el resultado deseado.
+GPT-4:
+	GPT: modelar un "chatGPT" personalizado, compartir con otros usuarios. Tienen las caracteristicas de ChatGPT en los aspectos de seguridad.
+	En caso de usar una API de terceros, se eligirá si los datos se pueden enviar a esa API. Al construir el GPT se podrá elegir si los datos se pueden enviar
+	para mejorar y entrenar el modelo, basandose en los controles de privacidad que tienen los usuarios.
+	Se podrá definir acciones personalizadas poniendo una o más APIs, pudiendo integrar datos externos o interactuar con el mundo real, conectando a base de datos
+	, conectando a correos electronicos o siendo un asistente de compras.
+Solo en GPT-4
+NOTA: Se va a poner el codigo, aportado en el curso, pero no se va a poder ejecutar ni usar la API Key debido a que no se va a usar la parte premium.
+	
+
