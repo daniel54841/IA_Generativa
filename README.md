@@ -93,4 +93,9 @@ GPT-4:
 Solo en GPT-4
 NOTA: Se va a poner el codigo, aportado en el curso, pero no se va a poder ejecutar ni usar la API Key debido a que no se va a usar la parte premium.
 	
-
+Redes Neuronales Recurrentes: precursora de los LLMs.Son un tipo de arquitectura diseñada para trabajar con datos secuenciales o datos que tienen una relacion temporal.
+Presentan conexiones recurrentes, con salidas que retroalimentan entradas futuras, permitiendo el manejo de datos secuenciales y la captura de dependencias temporales.
+Tienen memoria interna, que captura patrones en secuencias largas, permitiendo que se pueda generar nuevas secuencias que sigan estructuras similares a las que se han 
+sido entrenadas.
+Manejan secuencias de entrada y salida de longitud variable.
+Las arquitecturas avanzadas de RRNNs son las LSTM( Long Short-Term Memory) y las GRU( Gated Recurrent Unit)
